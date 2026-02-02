@@ -85,7 +85,7 @@ python src/bbox/bbox_nifti.py \
 
 **2D Neural Compression (TCM)**
 ```bash
-python external/2D_Models/LIC_TCM/eval_tcm.py \
+python external/2D_Models/LIC_TCM/eval.py \
     --checkpoint ./models/tcm.pth.tar \
     --cropped_dir ./data/cropped_volumes \
     --original_dir ./data/original_nifti \
@@ -105,7 +105,7 @@ python external/3D_Models/jpeg_3d.py \
 
 **Conventional 2D (HEIF)**
 ```bash
-python external/HEIF.py \
+python external/2D_Models/HEIF.py.py \
     --mode roi \
     --input_dir ./data/cropped_volumes \
     --output ./results \
@@ -115,7 +115,7 @@ python external/HEIF.py \
 
 ### Full Volume Mode (without ROI)
 ```bash
-python external/2D_Models/LIC_TCM/eval_tcm.py \
+python external/2D_Models/LIC_TCM/eval.py \
     --checkpoint ./models/tcm.pth.tar \
     --use_original_only \
     --original_dir ./data/original_nifti \
@@ -151,18 +151,6 @@ MedROI/
 The paper uses the ADNI (Alzheimer's Disease Neuroimaging Initiative) dataset with 200 T1-weighted brain MRI volumes. For dataset access, please visit [ADNI website](http://adni.loni.usc.edu/).
 
 A pilot study on INbreast mammography dataset is also reported in the paper.
-
-## Citation
-
-If you find this work useful, please cite:
-```bibtex
-@inproceedings{kim2026medroi,
-  title={MedROI: Codec-Agnostic Region of Interest-Centric Compression for Medical Images},
-  author={Kim, Jiwon and Jang, Ikbeom},
-  booktitle={International Conference on Pattern Recognition (ICPR)},
-  year={2026}
-}
-```
 
 ## Acknowledgments
 
