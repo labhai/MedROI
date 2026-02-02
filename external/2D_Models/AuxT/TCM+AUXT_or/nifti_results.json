@@ -1,0 +1,33 @@
+{
+  "dataset": "/mnt/nas-data/ADNI200/nifti",
+  "checkpoint": "./chkp/model_auxt_0035.pth.tar",
+  "num_subjects": 1,
+  "is_roi": false,
+  "axis": 2,
+  "avg_psnr": 32.003778420032,
+  "avg_ssim": 0.9019851684570312,
+  "avg_bpp": 0.0005859375,
+  "avg_compression_ratio": 13653.333333333334,
+  "avg_metadata_size": 0.0,
+  "results": {
+    "002_S_0413": {
+      "volume_shape": [
+        176,
+        240,
+        256
+      ],
+      "num_slices": 256,
+      "avg_psnr": 32.003778420032,
+      "avg_ssim": 0.9019851684570312,
+      "compressed_size": 792,
+      "metadata_size": 0,
+      "total_compressed_size": 792,
+      "bpp": 0.0005859375,
+      "compression_ratio": 13653.333333333334,
+      "cropping_time": 0.0,
+      "compression_time": 6.635551691055298,
+      "decompression_time": 1.6535060405731201,
+      "has_roi_metadata": false
+    }
+  }
+}
